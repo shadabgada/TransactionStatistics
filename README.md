@@ -38,14 +38,13 @@ GET /statistics : Returns the statistic based on the transactions which happened
 No request body
 Response:
 200 – in case of success
-204 – No content, if there are no transaction is older than 60 seconds
+204 – No content, if there are no transaction older than 60 seconds
 ````
 ### Design
 
 #### Services
 - Transaction Service: Used to deal with transactions happening around.
-    <br></br>
-- Statistics Service: Returns statistics of transaction that occured in last 60 seconds. It call transaction service to fetch the transaction data.
+- Statistics Service: Returns statistics of transaction that occurred in last 60 seconds. It calls transaction service to fetch the transaction data.
 
 #### Controllers
 -  Transaction Controller
